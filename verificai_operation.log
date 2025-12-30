@@ -1,0 +1,206 @@
+2025-12-29 22:27:38 | INFO     | VerifiAI : Sistema VerificAI inicializado.
+2025-12-29 22:27:38 | INFO     | VerifiAI : TESTE DE LOG: Se você está lendo isso, o logger funciona!
+2025-12-29 22:27:38 | INFO     | httpx : HTTP Request: GET http://qdrant:6333 "HTTP/1.1 200 OK"
+2025-12-29 22:27:38 | INFO     | sentence_transformers.SentenceTransformer : Use pytorch device_name: cpu
+2025-12-29 22:27:38 | INFO     | sentence_transformers.SentenceTransformer : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-29 19:27:39 | INFO     | VerifiAI : Sistema VerificAI inicializado.
+2025-12-29 19:27:39 | INFO     | VerifiAI : TESTE DE LOG: Se você está lendo isso, o logger funciona!
+2025-12-29 19:27:39 | INFO     | httpx : HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2025-12-29 19:27:39 | INFO     | sentence_transformers.SentenceTransformer : Use pytorch device_name: cpu
+2025-12-29 19:27:39 | INFO     | sentence_transformers.SentenceTransformer : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-29 22:27:40 | INFO     | httpx : HTTP Request: GET http://qdrant:6333/collections/meus_documentos/exists "HTTP/1.1 200 OK"
+2025-12-29 22:27:40 | WARNING  | root : Erro ao obter o provedor LLM: 'NoneType' object has no attribute 'lower'
+2025-12-29 22:27:40 | WARNING  | root : Não foi possível carregar a codificação para o modelo openai/gpt-oss-120b: 'Could not automatically map openai/gpt-oss-120b to a tokeniser. Please use `tiktoken.get_encoding` to explicitly get the tokeniser you expect.'. Usando 'cl100k_base' como padrão.
+2025-12-29 19:27:41 | INFO     | httpx : HTTP Request: GET http://localhost:6333/collections/meus_documentos/exists "HTTP/1.1 200 OK"
+2025-12-29 19:27:41 | WARNING  | root : Erro ao obter o provedor LLM: 'NoneType' object has no attribute 'lower'
+2025-12-29 19:27:41 | WARNING  | root : Não foi possível carregar a codificação para o modelo openai/gpt-oss-120b: 'Could not automatically map openai/gpt-oss-120b to a tokeniser. Please use `tiktoken.get_encoding` to explicitly get the tokeniser you expect.'. Usando 'cl100k_base' como padrão.
+2025-12-29 22:28:25 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points/delete?wait=true "HTTP/1.1 200 OK"
+2025-12-29 22:28:25 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points/scroll "HTTP/1.1 200 OK"
+2025-12-29 22:28:32 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:28:32 | INFO     | src.services.parser : Iniciando processamento do arquivo: Aula 304.pdf (34 páginas)
+2025-12-29 22:28:32 | INFO     | src.services.parser : Processamento concluído: 116 chunks gerados em 0.00s
+2025-12-29 22:28:32 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:28:32 | INFO     | src.services.parser : Iniciando processamento do arquivo: Aula 315.pdf (20 páginas)
+2025-12-29 22:28:32 | INFO     | src.services.parser : Processamento concluído: 104 chunks gerados em 0.00s
+2025-12-29 22:28:32 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:28:32 | INFO     | src.services.parser : Iniciando processamento do arquivo: Aula 334 Transcrição.pdf (24 páginas)
+2025-12-29 22:28:32 | INFO     | src.services.parser : Processamento concluído: 125 chunks gerados em 0.00s
+2025-12-29 22:28:32 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:28:32 | INFO     | src.services.parser : Iniciando processamento do arquivo: Aula 353 - O segredo por trás dos produtos que vendem todos os dias.pdf (52 páginas)
+2025-12-29 22:28:32 | INFO     | src.services.parser : Processamento concluído: 165 chunks gerados em 0.00s
+2025-12-29 22:28:32 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:28:32 | INFO     | src.services.parser : Iniciando processamento do arquivo: Aula 364 - Como ter renda perpétua e receita diária.pdf (13 páginas)
+2025-12-29 22:28:32 | INFO     | src.services.parser : Processamento concluído: 31 chunks gerados em 0.00s
+2025-12-29 22:28:32 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:28:32 | INFO     | src.services.parser : Iniciando processamento do arquivo: Caderno Aula 304.pdf (11 páginas)
+2025-12-29 22:28:32 | INFO     | src.services.parser : Processamento concluído: 27 chunks gerados em 0.00s
+2025-12-29 22:28:32 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:28:32 | INFO     | src.services.parser : Iniciando processamento do arquivo: Caderno Aula 353.pdf (13 páginas)
+2025-12-29 22:28:32 | INFO     | src.services.parser : Processamento concluído: 29 chunks gerados em 0.00s
+2025-12-29 22:28:32 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points "HTTP/1.1 200 OK"
+2025-12-29 22:28:32 | INFO     | src.services.vector_store : 0/597 chunks encontrados no banco para o arquivo Caderno Aula 353.pdf. Preparando 597 chunks para subir.
+2025-12-29 22:28:48 | INFO     | httpx : HTTP Request: PUT http://qdrant:6333/collections/meus_documentos/points?wait=true "HTTP/1.1 200 OK"
+2025-12-29 22:28:48 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points/scroll "HTTP/1.1 200 OK"
+2025-12-29 19:29:22 | INFO     | VerifiAI : Sistema VerificAI inicializado.
+2025-12-29 19:29:22 | INFO     | httpx : HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2025-12-29 19:29:22 | INFO     | sentence_transformers.SentenceTransformer : Use pytorch device_name: cpu
+2025-12-29 19:29:22 | INFO     | sentence_transformers.SentenceTransformer : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-29 19:29:25 | INFO     | httpx : HTTP Request: GET http://localhost:6333/collections/meus_documentos/exists "HTTP/1.1 200 OK"
+2025-12-29 19:29:25 | WARNING  | root : Erro ao obter o provedor LLM: 'NoneType' object has no attribute 'lower'
+2025-12-29 19:29:25 | WARNING  | root : Não foi possível carregar a codificação para o modelo openai/gpt-oss-120b: 'Could not automatically map openai/gpt-oss-120b to a tokeniser. Please use `tiktoken.get_encoding` to explicitly get the tokeniser you expect.'. Usando 'cl100k_base' como padrão.
+2025-12-29 22:29:24 | INFO     | VerifiAI : Sistema VerificAI inicializado.
+2025-12-29 22:29:24 | INFO     | httpx : HTTP Request: GET http://qdrant:6333 "HTTP/1.1 200 OK"
+2025-12-29 22:29:24 | INFO     | sentence_transformers.SentenceTransformer : Use pytorch device_name: cpu
+2025-12-29 22:29:24 | INFO     | sentence_transformers.SentenceTransformer : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-29 22:29:27 | INFO     | httpx : HTTP Request: GET http://qdrant:6333/collections/meus_documentos/exists "HTTP/1.1 200 OK"
+2025-12-29 22:29:27 | WARNING  | root : Erro ao obter o provedor LLM: 'NoneType' object has no attribute 'lower'
+2025-12-29 22:29:27 | WARNING  | root : Não foi possível carregar a codificação para o modelo openai/gpt-oss-120b: 'Could not automatically map openai/gpt-oss-120b to a tokeniser. Please use `tiktoken.get_encoding` to explicitly get the tokeniser you expect.'. Usando 'cl100k_base' como padrão.
+2025-12-29 22:30:17 | INFO     | VerifiAI : Sistema VerificAI inicializado.
+2025-12-29 22:30:17 | INFO     | httpx : HTTP Request: GET http://qdrant:6333 "HTTP/1.1 200 OK"
+2025-12-29 22:30:17 | INFO     | sentence_transformers.SentenceTransformer : Use pytorch device_name: cpu
+2025-12-29 22:30:17 | INFO     | sentence_transformers.SentenceTransformer : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-29 19:30:17 | INFO     | VerifiAI : Sistema VerificAI inicializado.
+2025-12-29 19:30:17 | INFO     | httpx : HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2025-12-29 19:30:17 | INFO     | sentence_transformers.SentenceTransformer : Use pytorch device_name: cpu
+2025-12-29 19:30:17 | INFO     | sentence_transformers.SentenceTransformer : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-29 22:30:19 | INFO     | httpx : HTTP Request: GET http://qdrant:6333/collections/meus_documentos/exists "HTTP/1.1 200 OK"
+2025-12-29 22:30:19 | WARNING  | root : Erro ao obter o provedor LLM: 'NoneType' object has no attribute 'lower'
+2025-12-29 22:30:19 | WARNING  | root : Não foi possível carregar a codificação para o modelo openai/gpt-oss-120b: 'Could not automatically map openai/gpt-oss-120b to a tokeniser. Please use `tiktoken.get_encoding` to explicitly get the tokeniser you expect.'. Usando 'cl100k_base' como padrão.
+2025-12-29 19:30:20 | INFO     | httpx : HTTP Request: GET http://localhost:6333/collections/meus_documentos/exists "HTTP/1.1 200 OK"
+2025-12-29 19:30:20 | WARNING  | root : Erro ao obter o provedor LLM: 'NoneType' object has no attribute 'lower'
+2025-12-29 19:30:20 | WARNING  | root : Não foi possível carregar a codificação para o modelo openai/gpt-oss-120b: 'Could not automatically map openai/gpt-oss-120b to a tokeniser. Please use `tiktoken.get_encoding` to explicitly get the tokeniser you expect.'. Usando 'cl100k_base' como padrão.
+2025-12-29 22:31:10 | INFO     | httpx : HTTP Request: DELETE http://qdrant:6333/collections/meus_documentos "HTTP/1.1 200 OK"
+2025-12-29 22:31:10 | INFO     | httpx : HTTP Request: GET http://qdrant:6333/collections/meus_documentos/exists "HTTP/1.1 200 OK"
+2025-12-29 22:31:10 | INFO     | httpx : HTTP Request: PUT http://qdrant:6333/collections/meus_documentos "HTTP/1.1 200 OK"
+2025-12-29 22:31:10 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points/scroll "HTTP/1.1 200 OK"
+2025-12-29 22:31:17 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:31:17 | INFO     | src.services.parser : Iniciando processamento do arquivo: Aula 304.pdf (34 páginas)
+2025-12-29 22:31:17 | INFO     | src.services.parser : Processamento concluído: 116 chunks gerados em 0.00s
+2025-12-29 22:31:17 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:31:17 | INFO     | src.services.parser : Iniciando processamento do arquivo: Aula 315.pdf (20 páginas)
+2025-12-29 22:31:17 | INFO     | src.services.parser : Processamento concluído: 104 chunks gerados em 0.00s
+2025-12-29 22:31:17 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:31:17 | INFO     | src.services.parser : Iniciando processamento do arquivo: Aula 334 Transcrição.pdf (24 páginas)
+2025-12-29 22:31:17 | INFO     | src.services.parser : Processamento concluído: 125 chunks gerados em 0.00s
+2025-12-29 22:31:17 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:31:17 | INFO     | src.services.parser : Iniciando processamento do arquivo: Aula 353 - O segredo por trás dos produtos que vendem todos os dias.pdf (52 páginas)
+2025-12-29 22:31:17 | INFO     | src.services.parser : Processamento concluído: 165 chunks gerados em 0.00s
+2025-12-29 22:31:17 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:31:17 | INFO     | src.services.parser : Iniciando processamento do arquivo: Aula 364 - Como ter renda perpétua e receita diária.pdf (13 páginas)
+2025-12-29 22:31:17 | INFO     | src.services.parser : Processamento concluído: 31 chunks gerados em 0.00s
+2025-12-29 22:31:17 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:31:17 | INFO     | src.services.parser : Iniciando processamento do arquivo: Caderno Aula 304.pdf (11 páginas)
+2025-12-29 22:31:17 | INFO     | src.services.parser : Processamento concluído: 27 chunks gerados em 0.00s
+2025-12-29 22:31:17 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:31:17 | INFO     | src.services.parser : Iniciando processamento do arquivo: Caderno Aula 353.pdf (13 páginas)
+2025-12-29 22:31:17 | INFO     | src.services.parser : Processamento concluído: 29 chunks gerados em 0.00s
+2025-12-29 22:31:17 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points "HTTP/1.1 200 OK"
+2025-12-29 22:31:17 | INFO     | src.services.vector_store : 0/597 chunks encontrados no banco para o arquivo Caderno Aula 353.pdf. Preparando 597 chunks para subir.
+2025-12-29 22:31:32 | INFO     | httpx : HTTP Request: PUT http://qdrant:6333/collections/meus_documentos/points?wait=true "HTTP/1.1 200 OK"
+2025-12-29 22:31:32 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points/scroll "HTTP/1.1 200 OK"
+2025-12-29 22:31:51 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:31:51 | INFO     | src.services.parser : Iniciando processamento do arquivo: Aula 304.pdf (34 páginas)
+2025-12-29 22:31:51 | INFO     | src.services.parser : Processamento concluído: 116 chunks gerados em 0.00s
+2025-12-29 22:31:51 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points "HTTP/1.1 200 OK"
+2025-12-29 22:31:51 | INFO     | src.services.vector_store : 0/116 chunks encontrados no banco para o arquivo Aula 304.pdf. Preparando 116 chunks para subir.
+2025-12-29 22:31:54 | INFO     | httpx : HTTP Request: PUT http://qdrant:6333/collections/meus_documentos/points?wait=true "HTTP/1.1 200 OK"
+2025-12-29 22:31:54 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points/scroll "HTTP/1.1 200 OK"
+2025-12-29 22:32:10 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:32:10 | INFO     | src.services.parser : Iniciando processamento do arquivo: Aula 304.pdf (34 páginas)
+2025-12-29 22:32:10 | INFO     | src.services.parser : Processamento concluído: 116 chunks gerados em 0.00s
+2025-12-29 22:32:10 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points "HTTP/1.1 200 OK"
+2025-12-29 22:32:10 | INFO     | src.services.vector_store : 0/116 chunks encontrados no banco para o arquivo Aula 304.pdf. Preparando 116 chunks para subir.
+2025-12-29 22:32:13 | INFO     | httpx : HTTP Request: PUT http://qdrant:6333/collections/meus_documentos/points?wait=true "HTTP/1.1 200 OK"
+2025-12-29 22:32:13 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points/scroll "HTTP/1.1 200 OK"
+2025-12-29 22:35:49 | INFO     | VerifiAI : Sistema VerificAI inicializado.
+2025-12-29 22:35:49 | INFO     | httpx : HTTP Request: GET http://qdrant:6333 "HTTP/1.1 200 OK"
+2025-12-29 22:35:49 | INFO     | sentence_transformers.SentenceTransformer : Use pytorch device_name: cpu
+2025-12-29 22:35:49 | INFO     | sentence_transformers.SentenceTransformer : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-29 19:35:51 | INFO     | VerifiAI : Sistema VerificAI inicializado.
+2025-12-29 19:35:51 | INFO     | httpx : HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2025-12-29 19:35:51 | INFO     | sentence_transformers.SentenceTransformer : Use pytorch device_name: cpu
+2025-12-29 19:35:51 | INFO     | sentence_transformers.SentenceTransformer : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-29 22:35:52 | INFO     | httpx : HTTP Request: GET http://qdrant:6333/collections/meus_documentos/exists "HTTP/1.1 200 OK"
+2025-12-29 22:35:52 | WARNING  | root : Erro ao obter o provedor LLM: 'NoneType' object has no attribute 'lower'
+2025-12-29 22:35:52 | WARNING  | root : Não foi possível carregar a codificação para o modelo openai/gpt-oss-120b: 'Could not automatically map openai/gpt-oss-120b to a tokeniser. Please use `tiktoken.get_encoding` to explicitly get the tokeniser you expect.'. Usando 'cl100k_base' como padrão.
+2025-12-29 19:35:54 | INFO     | httpx : HTTP Request: GET http://localhost:6333/collections/meus_documentos/exists "HTTP/1.1 200 OK"
+2025-12-29 19:35:54 | WARNING  | root : Erro ao obter o provedor LLM: 'NoneType' object has no attribute 'lower'
+2025-12-29 19:35:54 | WARNING  | root : Não foi possível carregar a codificação para o modelo openai/gpt-oss-120b: 'Could not automatically map openai/gpt-oss-120b to a tokeniser. Please use `tiktoken.get_encoding` to explicitly get the tokeniser you expect.'. Usando 'cl100k_base' como padrão.
+2025-12-29 22:36:03 | INFO     | VerifiAI : Sistema VerificAI inicializado.
+2025-12-29 22:36:03 | INFO     | httpx : HTTP Request: GET http://qdrant:6333 "HTTP/1.1 200 OK"
+2025-12-29 22:36:03 | INFO     | sentence_transformers.SentenceTransformer : Use pytorch device_name: cpu
+2025-12-29 22:36:03 | INFO     | sentence_transformers.SentenceTransformer : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-29 19:36:03 | INFO     | VerifiAI : Sistema VerificAI inicializado.
+2025-12-29 19:36:03 | INFO     | httpx : HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2025-12-29 19:36:03 | INFO     | sentence_transformers.SentenceTransformer : Use pytorch device_name: cpu
+2025-12-29 19:36:03 | INFO     | sentence_transformers.SentenceTransformer : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-29 22:36:05 | INFO     | httpx : HTTP Request: GET http://qdrant:6333/collections/meus_documentos/exists "HTTP/1.1 200 OK"
+2025-12-29 22:36:05 | WARNING  | root : Erro ao obter o provedor LLM: 'NoneType' object has no attribute 'lower'
+2025-12-29 22:36:05 | WARNING  | root : Não foi possível carregar a codificação para o modelo openai/gpt-oss-120b: 'Could not automatically map openai/gpt-oss-120b to a tokeniser. Please use `tiktoken.get_encoding` to explicitly get the tokeniser you expect.'. Usando 'cl100k_base' como padrão.
+2025-12-29 19:36:05 | INFO     | httpx : HTTP Request: GET http://localhost:6333/collections/meus_documentos/exists "HTTP/1.1 200 OK"
+2025-12-29 19:36:05 | WARNING  | root : Erro ao obter o provedor LLM: 'NoneType' object has no attribute 'lower'
+2025-12-29 19:36:05 | WARNING  | root : Não foi possível carregar a codificação para o modelo openai/gpt-oss-120b: 'Could not automatically map openai/gpt-oss-120b to a tokeniser. Please use `tiktoken.get_encoding` to explicitly get the tokeniser you expect.'. Usando 'cl100k_base' como padrão.
+2025-12-29 19:37:10 | INFO     | VerifiAI : Sistema VerificAI inicializado.
+2025-12-29 19:37:10 | INFO     | httpx : HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2025-12-29 19:37:10 | INFO     | sentence_transformers.SentenceTransformer : Use pytorch device_name: cpu
+2025-12-29 19:37:10 | INFO     | sentence_transformers.SentenceTransformer : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-29 22:37:10 | INFO     | VerifiAI : Sistema VerificAI inicializado.
+2025-12-29 22:37:10 | INFO     | httpx : HTTP Request: GET http://qdrant:6333 "HTTP/1.1 200 OK"
+2025-12-29 22:37:10 | INFO     | sentence_transformers.SentenceTransformer : Use pytorch device_name: cpu
+2025-12-29 22:37:10 | INFO     | sentence_transformers.SentenceTransformer : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-29 19:37:12 | INFO     | httpx : HTTP Request: GET http://localhost:6333/collections/meus_documentos/exists "HTTP/1.1 200 OK"
+2025-12-29 19:37:12 | WARNING  | root : Erro ao obter o provedor LLM: 'NoneType' object has no attribute 'lower'
+2025-12-29 19:37:12 | WARNING  | root : Não foi possível carregar a codificação para o modelo openai/gpt-oss-120b: 'Could not automatically map openai/gpt-oss-120b to a tokeniser. Please use `tiktoken.get_encoding` to explicitly get the tokeniser you expect.'. Usando 'cl100k_base' como padrão.
+2025-12-29 22:37:12 | INFO     | httpx : HTTP Request: GET http://qdrant:6333/collections/meus_documentos/exists "HTTP/1.1 200 OK"
+2025-12-29 22:37:12 | WARNING  | root : Erro ao obter o provedor LLM: 'NoneType' object has no attribute 'lower'
+2025-12-29 22:37:12 | WARNING  | root : Não foi possível carregar a codificação para o modelo openai/gpt-oss-120b: 'Could not automatically map openai/gpt-oss-120b to a tokeniser. Please use `tiktoken.get_encoding` to explicitly get the tokeniser you expect.'. Usando 'cl100k_base' como padrão.
+2025-12-29 22:37:13 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:37:13 | INFO     | src.services.parser : Iniciando processamento do arquivo: Aula 315.pdf (20 páginas)
+2025-12-29 22:37:13 | INFO     | src.services.parser : Processamento concluído: 104 chunks gerados em 0.00s
+2025-12-29 22:37:13 | INFO     | src.services.vector_store : DEBUG: Verificando 104 IDs. Exemplo do primeiro: 9f65ad485a917c6fc25de0cb274ff27d
+2025-12-29 22:37:13 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points "HTTP/1.1 200 OK"
+2025-12-29 22:37:13 | INFO     | src.services.vector_store : DEBUG: IDs encontrados no Qdrant: 104
+2025-12-29 22:37:13 | INFO     | src.services.vector_store : 0/104 chunks encontrados no banco para o arquivo Aula 315.pdf. Preparando 104 chunks para subir.
+2025-12-29 22:37:15 | INFO     | httpx : HTTP Request: PUT http://qdrant:6333/collections/meus_documentos/points?wait=true "HTTP/1.1 200 OK"
+2025-12-29 22:37:15 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points/scroll "HTTP/1.1 200 OK"
+2025-12-29 22:40:14 | INFO     | VerifiAI : Sistema VerificAI inicializado.
+2025-12-29 22:40:14 | INFO     | httpx : HTTP Request: GET http://qdrant:6333 "HTTP/1.1 200 OK"
+2025-12-29 22:40:14 | INFO     | sentence_transformers.SentenceTransformer : Use pytorch device_name: cpu
+2025-12-29 22:40:14 | INFO     | sentence_transformers.SentenceTransformer : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-29 19:40:14 | INFO     | VerifiAI : Sistema VerificAI inicializado.
+2025-12-29 19:40:14 | INFO     | httpx : HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2025-12-29 19:40:14 | INFO     | sentence_transformers.SentenceTransformer : Use pytorch device_name: cpu
+2025-12-29 19:40:14 | INFO     | sentence_transformers.SentenceTransformer : Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-12-29 22:40:16 | INFO     | httpx : HTTP Request: GET http://qdrant:6333/collections/meus_documentos/exists "HTTP/1.1 200 OK"
+2025-12-29 22:40:16 | WARNING  | root : Erro ao obter o provedor LLM: 'NoneType' object has no attribute 'lower'
+2025-12-29 22:40:16 | WARNING  | root : Não foi possível carregar a codificação para o modelo openai/gpt-oss-120b: 'Could not automatically map openai/gpt-oss-120b to a tokeniser. Please use `tiktoken.get_encoding` to explicitly get the tokeniser you expect.'. Usando 'cl100k_base' como padrão.
+2025-12-29 19:40:16 | INFO     | httpx : HTTP Request: GET http://localhost:6333/collections/meus_documentos/exists "HTTP/1.1 200 OK"
+2025-12-29 19:40:16 | WARNING  | root : Erro ao obter o provedor LLM: 'NoneType' object has no attribute 'lower'
+2025-12-29 19:40:16 | WARNING  | root : Não foi possível carregar a codificação para o modelo openai/gpt-oss-120b: 'Could not automatically map openai/gpt-oss-120b to a tokeniser. Please use `tiktoken.get_encoding` to explicitly get the tokeniser you expect.'. Usando 'cl100k_base' como padrão.
+2025-12-29 22:40:16 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:40:16 | INFO     | src.services.parser : Iniciando processamento do arquivo: Aula 304.pdf (34 páginas)
+2025-12-29 22:40:16 | INFO     | src.services.parser : Processamento concluído: 116 chunks gerados em 0.00s
+2025-12-29 22:40:16 | INFO     | src.services.vector_store : DEBUG: Verificando 116 IDs. Exemplo do primeiro: 0d4528a731297277df3e7c16528ac706
+2025-12-29 22:40:16 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points "HTTP/1.1 200 OK"
+2025-12-29 22:40:16 | INFO     | src.services.vector_store : DEBUG: IDs encontrados no Qdrant: 116
+2025-12-29 22:40:16 | INFO     | src.services.vector_store : 0/116 chunks encontrados no banco para o arquivo Aula 304.pdf. Preparando 116 chunks para subir.
+2025-12-29 22:40:19 | INFO     | httpx : HTTP Request: PUT http://qdrant:6333/collections/meus_documentos/points?wait=true "HTTP/1.1 200 OK"
+2025-12-29 22:40:19 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points/scroll "HTTP/1.1 200 OK"
+2025-12-29 22:40:35 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:40:35 | INFO     | src.services.parser : Iniciando processamento do arquivo: Aula 304.pdf (34 páginas)
+2025-12-29 22:40:35 | INFO     | src.services.parser : Processamento concluído: 116 chunks gerados em 0.00s
+2025-12-29 22:40:35 | INFO     | src.services.vector_store : DEBUG: Verificando 116 IDs. Exemplo do primeiro: 0d4528a731297277df3e7c16528ac706
+2025-12-29 22:40:35 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points "HTTP/1.1 200 OK"
+2025-12-29 22:40:35 | INFO     | src.services.vector_store : DEBUG: IDs encontrados no Qdrant: 116
+2025-12-29 22:40:35 | INFO     | src.services.vector_store : 0/116 chunks encontrados no banco para o arquivo Aula 304.pdf. Preparando 116 chunks para subir.
+2025-12-29 22:40:38 | INFO     | httpx : HTTP Request: PUT http://qdrant:6333/collections/meus_documentos/points?wait=true "HTTP/1.1 200 OK"
+2025-12-29 22:40:38 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points/scroll "HTTP/1.1 200 OK"
+2025-12-29 22:40:55 | INFO     | src.services.parser : ChunkProcessor configurado: Size=500, Overlap=50
+2025-12-29 22:40:55 | INFO     | src.services.parser : Iniciando processamento do arquivo: Aula 304.pdf (34 páginas)
+2025-12-29 22:40:55 | INFO     | src.services.parser : Processamento concluído: 116 chunks gerados em 0.00s
+2025-12-29 22:40:55 | INFO     | src.services.vector_store : DEBUG: Verificando 116 IDs. Exemplo do primeiro: 0d4528a731297277df3e7c16528ac706
+2025-12-29 22:40:55 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points "HTTP/1.1 200 OK"
+2025-12-29 22:40:55 | INFO     | src.services.vector_store : DEBUG: IDs encontrados no Qdrant: 116
+2025-12-29 22:40:55 | INFO     | src.services.vector_store : 0/116 chunks encontrados no banco para o arquivo Aula 304.pdf. Preparando 116 chunks para subir.
+2025-12-29 22:40:58 | INFO     | httpx : HTTP Request: PUT http://qdrant:6333/collections/meus_documentos/points?wait=true "HTTP/1.1 200 OK"
+2025-12-29 22:40:58 | INFO     | httpx : HTTP Request: POST http://qdrant:6333/collections/meus_documentos/points/scroll "HTTP/1.1 200 OK"

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography"; /* Certifique-se de ter instalado: bun add @tailwindcss/typography */
+/* Reset básico para garantir a fonte */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F3F4F6; /* Cinza muito suave */
+  color: #111827;
+}
+
+/* Esconde a barra de rolagem mas mantém o scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Animação de entrada suave (Slide Up + Fade) */
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-enter {
+  animation: slideUpFade 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Efeito de digitação (pulso) */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 0.4; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+.typing-dot {
+  animation: pulse-dot 1.4s infinite ease-in-out both;
+}
+.typing-dot:nth-child(1) { animation-delay: -0.32s; }
+.typing-dot:nth-child(2) { animation-delay: -0.16s; }
+
+/* Estilização do Markdown na Resposta da IA */
+.markdown-content p {
+    margin-bottom: 12px; /* Espaço entre parágrafos */
+}
+
+.markdown-content p:last-child {
+    margin-bottom: 0;
+}
+
+.markdown-content strong {
+    font-weight: 700;
+    color: #111827; /* Um tom de cinza quase preto para destaque */
+}
+
+.markdown-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 12px;
+}
+
+.prose {
+    color: #111827 !important; /* Um cinza quase preto (gray-900) */
+}
+
+.prose strong {
+    color: #000 !important; /* Garante que o negrito não fique branco */
+}
+
+.prose table {
+    color: #111827 !important;
+}
+
+/* Se você estiver usando fundo branco na bolha, garanta que o fundo da tabela também seja visível */
+.prose table td, .prose table th {
+    border-color: #e5e7eb !important; /* Cor das bordas (gray-200) */
+}
+/* --- Ajustes do Slider (Range Input) --- */
+#threshold-range {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #e5e7eb; /* Track cinza */
+    height: 4px;
+    border-radius: 2px;
+    outline: none;
+}
+
+#threshold-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    transition: transform 0.1s ease;
+}
+
+#threshold-range::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+/* --- Estilização Manual de Tabelas (Caso a Prose falhe) --- */
+.prose table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    margin: 1rem 0;
+    background: #fff;
+}
+
+.prose th {
+    background-color: #f9fafb;
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+    font-weight: 600;
+}
+
+.prose td {
+    padding: 10px;
+    border: 1px solid #e5e7eb;
+    line-height: 1.4;
+}
+
+/* --- Modal de Contexto do PDF --- */
+#context-modal {
+    transition: opacity 0.3s ease;
+}
+
+#context-modal.hidden {
+    display: none;
+    opacity: 0;
+}
+
+#context-text {
+    font-style: italic;
+    color: #374151;
+    position: relative;
+    background: #fdfdfd;
+}
+
+/* --- Feedback de Custo --- */
+#cost-display {
+    transition: color 0.3s ease;
+}
+
+.text-green-update {
+    color: #16a34a !important;
+    font-weight: bold;
+}

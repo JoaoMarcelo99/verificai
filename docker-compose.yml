@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  #Banco de Dados Vetorial
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: answervault_vector_db
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_storage:/qdrant/storage
+    networks:
+      - answervault_network
+    
+  #Aplicação FastAPI
+  app:
+    build: .
+    container_name: answervault_api
+    volumes:
+      - .:/app
+      - /app/.venv
+      - ./data:/app/data
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - QDRANT_HOST=qdrant
+    depends_on:
+      - qdrant
+    networks:
+      - answervault_network
+
+networks:
+  answervault_network:
+    driver: bridge
+
+volumes:
+  qdrant_storage:
+  
